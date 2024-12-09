@@ -44,14 +44,11 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun Greeting(name: String, modifier: Modifier = Modifier) {
-    val horizontalAlignment = Alignment.CenterHorizontally
 
-    Box{
-        Modifier.background(Color(0xff95fe95))
-
-    }
-
-    Column {
+        Column(
+            Modifier.fillMaxSize().background(Color(0xff95fe95)),
+            horizontalAlignment = Alignment.CenterHorizontally
+        ){
 
         Text(
             text = "2024期末上機考(資管二A蕭雅帆)",
